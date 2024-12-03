@@ -4,7 +4,7 @@ import { writeContacts } from "../utils/writeContacts.js";
 export const removeLastContact = async () => {
     const contacts = await readContacts();
     contacts.pop();
-    await writeContacts()
+    await writeContacts(contacts)
 };
 
 removeLastContact();
